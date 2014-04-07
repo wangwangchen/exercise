@@ -1,0 +1,83 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    
+   >
+
+    <RelativeLayout 
+        
+       android:layout_width="match_parent"
+       android:layout_height="55dip"
+       android:orientation="horizontal"
+       android:gravity="center_vertical" >
+       <Button 
+           android:id="@+id/bt_back"
+           android:layout_width="45dip"
+           android:layout_height="45dip"
+       	   android:background="@drawable/back"
+        />
+           
+        <TextView 
+            android:id="@+id/tv_current_time"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_toRightOf="@id/bt_back"
+          android:layout_centerVertical="true"
+           
+         />
+        <ImageView
+            android:id="@+id/iv_colorbox"
+           android:layout_width="48dip"
+           android:layout_height="48dip"
+           android:background="@drawable/colorbox"
+           android:layout_alignParentRight="true"
+            />
+        
+        
+       <ImageView
+           android:id="@+id/iv_attachment"
+           android:layout_width="48dip"
+           android:layout_height="48dip"
+           android:background="@drawable/attachment"
+           android:layout_toLeftOf="@id/iv_colorbox"
+            />
+          
+         <ImageView
+             android:id="@+id/iv_alarm"
+           android:layout_width="48dip"
+           android:layout_height="48dip"
+           android:background="@drawable/alarm"
+           android:layout_toLeftOf="@id/iv_attachment"
+            />
+         <TextView 
+             android:id="@+id/tv_alarm_time"
+             android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_centerVertical="true"
+           android:layout_toLeftOf="@id/iv_alarm"
+             />
+    </RelativeLayout>
+   <TextView 
+       android:layout_width="match_parent"
+       android:layout_height="2dip"
+       android:background="@android:color/black"
+       
+       
+       
+       />
+    
+    <EditText
+       android:id="@+id/et_content"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="horizontal"
+       android:gravity="top"
+     
+        
+        
+        
+        />   
+
+</LinearLayout>
